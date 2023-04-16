@@ -11,6 +11,7 @@ def read_input():
         if not "a" in fn:
             f = open("tests/"+fn, "r")
             text = f.readlines()
+            f.close()
             P = text[0]
             T = text[1]
 
@@ -43,7 +44,7 @@ def get_occurrences(pattern, text):
     q = 21
     pattern_hash = 0
     text_hash = 0
-    
+
     for i in range(pattern_length-1):
         h = (d*h) % q
 
