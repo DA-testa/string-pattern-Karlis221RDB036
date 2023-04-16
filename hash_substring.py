@@ -7,7 +7,7 @@ def read_input():
         P = input()
         T = input()
     elif "F" in cmd:
-        fn = input()
+        fn = "06"
         if not "a" in fn:
             f = open("tests/"+fn, "r")
             text = f.readlines()
